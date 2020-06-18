@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="프로필 수정"
+        android:layout_margin="10dp"
+
+        />
+    <Button
+        android:id="@+id/btn_chatrooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="채팅방"
+        android:layout_margin="10dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/memocafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="즐겨찾기(카페)"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="마스크"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/memos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="저장한 게시물"
+        android:layout_margin="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="로그아웃"
+        android:layout_margin="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="메뉴닫기"
+        android:layout_margin="10dp"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btn_sc_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="카페찾기" />
+
+        <TextView
+            android:id="@+id/pocali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pocali"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/person"
+            android:padding="0dp"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="#000000" />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="카메라 어플"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_camera_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="푸디"
+            android:layout_weight="1"
+            />
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="카메라 필터"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_camera_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="맛있게4"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_PostText"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="오늘도 나는 자판을 두드리고 있다..."
+        android:layout_marginLeft="12dp"
+
+        />
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="#000000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_coment"
+            android:layout_toLeftOf="@id/btn_comentfinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="댓글을 입력해주세요"
+            android:inputType="text"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/btn_comentfinish"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textSize="13dp"
+            android:text="등록"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_coment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+<include layout="@layout/view_loader"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:visibility="gone"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

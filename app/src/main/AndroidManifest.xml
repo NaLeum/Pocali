@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.autofocus"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".first">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".cafedata" />
+        <activity
+            android:name=".cafepage"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".editgaesi" />
+        <activity android:name=".login" />
+        <activity android:name=".password" />
+        <activity android:name=".repassword" />
+        <activity android:name=".profilegrid" />
+        <activity android:name=".register" />
+        <activity android:name=".gaesi" />
+        <activity android:name=".cafesearch" />
+        <activity android:name=".manu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".memberinfo" />
+        <activity android:name=".MemberinitActivity" />
+        <activity android:name=".MemberinitActivity2" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".BasicActivity" />
+        <activity android:name="editcafe"/>
+        <activity android:name=".googlemap"/>
+        <activity android:name=".googlemap2"/>
+        <activity android:name=".downgaesi"/>
+        <activity android:name=".memocafe"/>
+        <activity android:name=".personprofile"/>
+        <activity android:name=".coment"/>
+        <activity android:name=".editprofile"/>
+        <activity android:name=".editprofile2"/>
+        <activity android:name=".GameActivity"/>
+        <activity android:name=".minigame"/>
+        <activity android:name=".MessageActivity"/>
+        <activity android:name=".maskmain"/>
+        <activity android:name=".JsonGeoTestActivity"/>
+        <activity android:name=".JsonTestActivity"/>
+        <activity android:name=".MapActivity"/>
+        <activity android:name="chatrooms"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <receiver android:name=".ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="dongster.cameranostest.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAcztbPl5h7_0eMtnzTRfsAZf-8xZ4n050"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+    </application>
+
+</manifest>
